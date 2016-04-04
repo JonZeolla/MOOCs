@@ -10,5 +10,7 @@ This is the course project for the Getting and Cleaning Data Coursera course.  T
 ## Notes
 Before running the script, ensure you are in the working directory where you'd like the dataset to be downloaded and unzipped, and where you'd like the output to be written.  
 
+Please review [CodeBook.md](https://github.com/JonZeolla/MOOCs/blob/master/Coursera/GettingandCleaningData/project/CodeBook.md) for additional details.  
+
 ## Final output
 The final output is in the file `project.txt`.

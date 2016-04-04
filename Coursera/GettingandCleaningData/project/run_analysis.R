@@ -6,8 +6,9 @@
 ####################
 
 ## Environment set-up
-# TODO: Don't forget to set your wd via setwd() to the folder with the dataset
-# setwd("/Users/jzeolla/Documents/MOOC/CleaningData/week4")
+# Don't forget to set your wd via setwd() to the folder with the dataset
+# or where you'd like the dataset to be downloaded and unzipped
+
 # Load a general set of helpful libraries
 packages <- c("lubridate", "reshape2", "plyr", "dplyr", "tidyr")
 sapply(packages, require, character.only = TRUE)

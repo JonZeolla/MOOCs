@@ -7,10 +7,10 @@ This is the course project for the Getting and Cleaning Data Coursera course.  T
 4. Merges the test and training datasets together, and keeps only the columns which hold standard deviation or mean information.  
 5. Creates a final dataset which has the mean value for each variable broken down by subject and activity pair.  
 
+Please review [CodeBook.md](https://github.com/JonZeolla/MOOCs/blob/master/Coursera/GettingandCleaningData/project/CodeBook.md) for additional details.  
+
 ## Notes
 Before running the script, ensure you are in the working directory where you'd like the dataset to be downloaded and unzipped, and where you'd like the output to be written.  
-
-Please review [CodeBook.md](https://github.com/JonZeolla/MOOCs/blob/master/Coursera/GettingandCleaningData/project/CodeBook.md) for additional details.  
 
 ## Final output
 The final output is in the file `project.txt`.

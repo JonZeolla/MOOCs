@@ -32,8 +32,7 @@ train_set <- read.table("train/X_train.txt")
 train_labels <- read.table("train/Y_train.txt")
 train_subject <- read.table("train/subject_train.txt")
 
-## Step 3:  Use descriptive activity names to name the activities in the data
-# set.
+## Do some tidying up
 # Set meta column names
 names(meta_activity_labels) <- c("label","activity")
 names(meta_features) <- c("label","feature")
@@ -59,13 +58,14 @@ mean_and_std <- cbind(all_merged$subject, all_merged$activity, all_merged[, grep
 colnames(mean_and_std)[colnames(mean_and_std)=="all_merged$subject"] <- "Subject"
 colnames(mean_and_std)[colnames(mean_and_std)=="all_merged$activity"] <- "Activity"
 mean_and_std$Activity <- as.character(mean_and_std$Activity)
-
-## Step 4:  Appropriately label the data set with descriptive variable names.
 names(mean_and_std) <- gsub('mean', 'Mean', names(mean_and_std))
 names(mean_and_std) <- gsub('std', 'Std', names(mean_and_std))
 names(mean_and_std) <- gsub('-', '', names(mean_and_std))
 names(mean_and_std) <- gsub('\\(\\)', '', names(mean_and_std))
 
+## Step 3:  Use descriptive activity names to name the activities in the data
+# set.
+## Step 4:  Appropriately label the data set with descriptive variable names.
 ## Step 5:  From the data set in step 4, create a second, independent tidy data
 ## set with the average of each variable for each activity and each subject.
 # Duplicate the data in a new data frame before manipulating it

@@ -52,8 +52,6 @@ all_merged <- rbind(test_merged, train_merged)
 
 ## Step 2:  Extract only the measurements on the mean and standard deviation for
 ## each measurement.
-# mean_and_std <- all_merged[, grep(c("std\\(\\)|mean\\(\\)"), names(all_merged))]
-# If you'd like to have a data frame that includes the subject and activity fields
 mean_and_std <- cbind(all_merged$subject, all_merged$activity, all_merged[, grep(c("std\\(\\)|mean\\(\\)"), names(all_merged))])
 colnames(mean_and_std)[colnames(mean_and_std)=="all_merged$subject"] <- "Subject"
 colnames(mean_and_std)[colnames(mean_and_std)=="all_merged$activity"] <- "Activity"
